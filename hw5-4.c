@@ -19,7 +19,7 @@ if(H >= 1 && H <= 12 && M >= 0 && M <= 59)
         angle = M_angle - H_angle;
 
     if(angle > 180)
-        angle -= 180;
+        angle = 360 - angle;
 }
 
 printf("%.3f\n",angle);
